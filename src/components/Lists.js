@@ -15,6 +15,10 @@ function Lists() {
   }
 
   function submithandle(event){
+    if (item.inputData === '') {
+       alert('please fill input field');
+       return
+    }
     event.preventDefault();
     let prevItem = item.lists;
 
